@@ -1,0 +1,32 @@
+<div id="navigation">
+    <div class="profile-picture">
+        <div class="stats-label text-color">
+            <span class="font-extra-bold font-uppercase">Username</span>
+
+            <div class="dropdown" dropdown >
+                <a dropdown-toggle class="dropdown-toggle" href="#">
+                    <small class="text-muted">Founder of App <b class="caret"></b></small>
+                </a>
+                <ul class="dropdown-menu animated fadeInRight m-t-xs">
+                    <li><a>Item</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <ul  side-navigation class="nav" id="side-menu">
+        <li ui-sref-active="active"><a ui-sref="dashboard"> <span class="nav-label">Dashboard</span></a></li>
+        <li ng-class="{'active': $state.includes('app_views')}" ui-sref-active="active"><a ui-sref="app_views.contacts"> <span class="nav-label">Contacts</span></a></li>
+        
+        <li>
+            <a href="#"><span class="nav-label">Common views</span><span class="fa arrow"></span> </a>
+            <ul class="nav nav-second-level">
+                <li ui-sref-active="active"><a ui-sref="common.login">Login</a></li>
+                <li ui-sref-active="active"><a ui-sref="common.register">Register</a></li>
+                <li ui-sref-active="active"><a ui-sref="common.error_one">Error 404</a></li>
+                <li ui-sref-active="active"><a ui-sref="common.error_two">Error 505</a></li>
+                <li ui-sref-active="active"><a ui-sref="common.lock">Lock screen</a></li>
+            </ul>
+        </li>
+    </ul>
+</div>
