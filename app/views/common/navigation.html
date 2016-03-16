@@ -1,8 +1,8 @@
 <div id="navigation">
     <div class="profile-picture">
         <div class="stats-label text-color">
+            <img class="profile" style="border:2px; border-radius: 500px;-webkit-border-radius: 500px;-moz-border-radius: 500px; padding:5px"/>
             <span class="font-extra-bold font-uppercase">Username</span>
-
             <div class="dropdown" dropdown >
                 <a dropdown-toggle class="dropdown-toggle" href="#">
                     <small class="text-muted">Founder of App <b class="caret"></b></small>
@@ -30,3 +30,19 @@
         </li>
     </ul>
 </div>
+<script type="text/javascript">
+$(document).ready(function(){
+    $('.profile').initial({
+        name: 'Dave', // Name of the user
+        charCount: 1, // Number of characherts to be shown in the picture.
+        textColor: '#ffffff', // Color of the text
+        seed: 0, // randomize background color
+        height: 100,
+        width: 100,
+        fontSize: 60,
+        fontWeight: 400,
+        fontFamily: 'HelveticaNeue-Light,Helvetica Neue Light,Helvetica Neue,Helvetica, Arial,Lucida Grande, sans-serif',
+        radius: 100
+    });
+})
+</script>
